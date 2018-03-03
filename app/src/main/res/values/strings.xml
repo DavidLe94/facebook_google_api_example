@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Fpoly Social</string>
+    <string name="username">Username: </string>
+    <string name="password">Password: </string>
+    <string name="login">Login</string>
+    <string name="loginSystem">LOGIN SYSTEM</string>
+    <string name="remember">Remember</string>
+    <string name="enterInfo">Enter Information</string>
+    <string name="addClass">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="facebook_app_id">1653568538273083</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

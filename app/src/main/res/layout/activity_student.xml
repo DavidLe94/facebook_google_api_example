@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_student"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    android:orientation="vertical"
+    tools:context="com.example.asus.androidadvance_assignment.StudentActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/layout_info"
+        android:visibility="invisible">
+
+        <com.facebook.login.widget.ProfilePictureView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user"
+            android:id="@+id/txtUser"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image"
+            android:layout_toEndOf="@+id/image"
+            android:layout_marginLeft="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/log_out"
+            android:layout_below="@+id/txtUser"
+            android:layout_alignLeft="@+id/txtUser"
+            android:layout_alignStart="@+id/txtUser" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/imbAddClass"
+            android:src="@drawable/add_class"
+            android:contentDescription="Add CLass"
+            android:background="@android:color/holo_orange_dark"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/show"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_orange_dark"
+            android:id="@+id/imbShowStudents" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/user_add"
+            android:id="@+id/imbAddStudents"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/imbAddClass"
+            android:layout_alignStart="@+id/imbAddClass"
+            android:background="@android:color/holo_orange_dark"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
